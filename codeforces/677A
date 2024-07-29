@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,h1,h2,count=0;
+    cin>>n>>h1;
+    while(n--){
+        cin>>h2;
+        if(h2>h1)count+=2;
+            else count+=1;
+    }
+    cout<<count;
+}
