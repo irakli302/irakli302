@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    string s;
+    cin>>s;
+    int count1=0,count2=0;
+    for(char c : s){
+        if(c>='A' && c<='Z') count1++;
+            else if(c>='a' && c<='z') count2++;
+    }
+    if (count1>count2){
+        for(char& c : s) c = toupper(c);
+    }
+        else{
+        for(char& c : s) c = tolower(c);
+        }
+    cout<<s;
+}
