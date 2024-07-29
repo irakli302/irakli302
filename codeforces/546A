@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,k,w;
+    cin >> k >> n >> w;
+    int price=(k+w*k)*w/2;
+    if(price>n)cout<<price-n;
+        else cout<<"0";
+}
