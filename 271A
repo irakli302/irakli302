@@ -1,0 +1,19 @@
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main(){
+    int y,x,check=0;
+    cin>>y;
+    while(check==0){
+        y+=1; 
+        x=y; 
+        set<int>st;
+        while(x){
+            st.insert(x%10);
+            x/=10;
+        }
+        if(st.size()==4)check=1;
+    }
+    cout << y;
+}
