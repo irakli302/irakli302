@@ -1,0 +1,11 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    int n,k;
+    double percentage;
+    cin>>n;
+    while(cin>>k) percentage+=k;
+    cout<<fixed<<setprecision(12)<<percentage/n;
+}
