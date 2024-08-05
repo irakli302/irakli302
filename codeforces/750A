@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n,k,count1=0,count2=0;
+    cin>>n>>k;
+    for(int i=1;i<=n;++i){
+        count1+=5*i;
+        if(count1<=240-k)++count2;
+            else break;
+    }
+    cout<<count2;
+}
