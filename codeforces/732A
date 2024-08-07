@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int k,r,count=0;
+    cin>>k>>r;
+    for(int i=1;i<=10;++i){
+        count=i*k;
+        if(count%10==r || count%10==0){
+            cout<<i;
+            return 0;
+    }
+  }
+}
